@@ -1,4 +1,4 @@
-package com.reactive.reactive.config;
+package com.reactive.config;
 
 import io.github.resilience4j.reactor.retry.RetryOperator;
 import io.github.resilience4j.retry.Retry;

@@ -1,6 +1,6 @@
-package com.reactive.reactive.controller;
+package com.reactive.controller;
 
-import com.reactive.reactive.service.MyService;
+import com.reactive.service.MyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

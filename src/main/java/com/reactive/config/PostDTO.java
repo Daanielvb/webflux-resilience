@@ -1,4 +1,4 @@
-package com.reactive.reactive.config;
+package com.reactive.config;
 
 public record PostDTO(
         long userId,

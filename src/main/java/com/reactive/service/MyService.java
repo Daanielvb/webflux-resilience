@@ -1,6 +1,6 @@
-package com.reactive.reactive.service;
+package com.reactive.service;
 
-import com.reactive.reactive.config.PostDTO;
+import com.reactive.config.PostDTO;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;

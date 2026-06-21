@@ -1,4 +1,4 @@
-package com.reactive.reactive.config;
+package com.reactive.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
