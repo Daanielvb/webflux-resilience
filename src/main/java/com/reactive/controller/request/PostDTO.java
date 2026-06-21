@@ -1,4 +1,4 @@
-package com.reactive.config;
+package com.reactive.controller.request;
 
 public record PostDTO(
         long userId,
