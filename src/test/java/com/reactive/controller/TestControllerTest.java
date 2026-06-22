@@ -1,6 +1,7 @@
 package com.reactive.controller;
 
 import com.reactive.service.MyService;
+import com.reactive.service.RetryableService;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webflux.test.autoconfigure.WebFluxTest;
@@ -21,6 +22,9 @@ class TestControllerTest {
 
     @MockitoBean
     private MyService myService;
+
+    @MockitoBean
+    private RetryableService retryableService;
 
     @Test
     void shouldReturnOk_whenServiceReturnsValue() {

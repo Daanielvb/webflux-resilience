@@ -35,6 +35,16 @@ public class WebClientConfig {
                 .build();
     }
 
+    @Bean
+    @Qualifier("anotherWebClient")
+    public WebClient anotherWebClient() {
+        return WebClient
+                .builder()
+                .baseUrl("https://jsonplaceholder.typicode.com/")
+                .defaultHeader("Content-Type", "application/json")
+                .build();
+    }
+
     private static ExchangeFilterFunction getFilterFunction(Set<Integer> retryableStatuses, RetryOperator<ClientResponse> retryOperator) {
         Set<HttpMethod> mutationMethods = Set.of(HttpMethod.PUT, HttpMethod.DELETE, HttpMethod.POST);
 
