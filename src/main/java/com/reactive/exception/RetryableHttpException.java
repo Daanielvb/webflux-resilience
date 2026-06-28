@@ -1,5 +1,8 @@
-package com.reactive;
+package com.reactive.exception;
 
+import lombok.Getter;
+
+@Getter
 public class RetryableHttpException extends RuntimeException {
     private final int statusCode;
 
@@ -8,5 +11,4 @@ public class RetryableHttpException extends RuntimeException {
         this.statusCode = statusCode;
     }
 
-    public int getStatusCode() { return statusCode; }
 }

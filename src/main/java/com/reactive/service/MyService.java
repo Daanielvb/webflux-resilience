@@ -1,6 +1,6 @@
 package com.reactive.service;
 
-import com.reactive.RetryableHttpException;
+import com.reactive.exception.RetryableHttpException;
 import com.reactive.controller.request.PostDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
